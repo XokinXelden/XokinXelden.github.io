@@ -1,17 +1,268 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px auto;
+  max-width: 1120px;
 }
 
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  font-size: 14px;
+  font-family: 'TTLakes';
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+}
+
+.h-header {
+  height: 86px;
+  border-bottom: 1px solid #d9fff5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.h-header__left-block {
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  gap: 10%;
+}
+
+.h-header__right-block {
+  display: flex;
+  align-items: center;
+  padding-right: 4%;
+  gap: 10%;
+}
+
+.repair-button__text {
+  display: none;
+}
+
+.search-button__text {
+  display: none;
+}
+
+.container__up-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.repair-button__text {
+  white-space: nowrap;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: bold;
+}
+.search-button__text {
+  white-space: nowrap;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.m-container__menu {
+  height: 50px;
+}
+
+.menu__shadow {
+  box-shadow: inset -28px 0px 15px -18px #ffffff;
+  position: relative;
+  top: 15px;
+  width: 100%;
+  height: 40px;
+  pointer-events: none;
+  margin-top: -25px;
+}
+
+.menu__scroll {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 0.5%;
+  height: 40px;
+  padding-left: 2%;
+  margin-top: -25px;
+}
+
+.menu__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll__button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.5em 18px;
+  color: #7e7e82;
+  font-size: 16px;
+}
+
+.scroll__button:focus {
+  outline: 3px solid #a0ffe6;
+}
+
+.scroll__button:focus {
+  outline: 2px solid #b8ffec;
+}
+
+.content__readMore {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+
+.text__expand {
+  overflow: hidden;
+  height: 120px;
+  width: auto;
+}
+
+.readMore__img {
+  margin-top: 2px;
+}
+
+.readMore__text {
+  font-weight: bold;
+}
+
+.title__content {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 1.5%;
+}
+
+#expand-toggle {
+  display: none;
+}
+
+#expand-toggle:checked ~ * .text__expand {
+  height: auto;
+  content: 'скрыть';
+}
+
+.title__img-elem {
+  max-width: 100%;
+}
+
+.right-block__divider {
+  display: none;
+}
+
+.h-header__center-block {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.repair-button__img {
+  height: 40px;
+}
+
+.search-button__img {
+  height: 40px;
+}
+
+.up-title__text-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+@media screen and (width >= 768px) {
+  .title {
+    display: flex;
+  }
+  .title__img {
+    margin-top: 10px;
+    margin: 0px 2%;
+    min-width: 47.5%;
+  }
+
+  .title__content {
+    height: 54%;
+  }
+
+  .title__img-elem {
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  .left-block__logo {
+    order: 1;
+  }
+
+  .h-header__center-block {
+    display: flex;
+  }
+  .text__expand {
+    height: 160px;
+  }
+  .menu {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (width >= 1120px) {
+  .h-header__center-block {
+    display: none;
+  }
+  .h-header__left-block {
+    display: none;
+  }
+  .h-header {
+    background-color: transparent;
+    justify-content: flex-end;
+    width: 50%;
+    margin-left: auto;
+  }
+  .repair-button__text {
+    display: block;
+  }
+  .search-button__text {
+    display: block;
+  }
+
+  .right-block__repair-button {
+    display: flex;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+
+  .right-block__search-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  .h-container__h-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .scroll__button {
+    margin-top: 10px;
+  }
+
+  .menu__scroll {
+    overflow: visible;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .text__expand {
+    height: auto;
+  }
+  .content__readMore {
+    display: none;
+  }
 }

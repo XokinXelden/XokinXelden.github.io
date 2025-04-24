@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="StyleCSS/Style.css" />
+    <link rel="stylesheet" />
+    <title>Вы хотели сказать SCP?</title>
   </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+  <body class="container">
+    <header class="h-container">
+      <div class="h-container__h-header">
+        <div class="h-header">
+          <div class="h-header__left-block">
+            <div class="left-block__burger-button">
+              <img src="./img/Burger.png" />
+            </div>
+            <div class="left-block__logo"><img src="./img/Logo.png" /></div>
+            <div class="left-block__divider"
+              ><img src="./img/divider.png"
+            /></div>
+          </div>
+          <div class="h-header__center-block">
+            <div class="center-block__call">
+              <img src="./img/call.png" alt="" />
+            </div>
+            <div class="center-block__profile">
+              <img src="./img/profile.png" alt="" />
+            </div>
+            <div class="center-block__chat">
+              <img src="./img/chat.png" alt="" />
+            </div>
+            <div class="center-block__divider">
+              <img src="./img/divider.png" />
+            </div>
+          </div>
+          <div class="h-header__right-block">
+            <div class="right-block__repair-button">
+              <div class="repair-button__img"
+                ><img src="./img/Repair.png"
+              /></div>
+              <div class="repair-button__text">Оставить заявку</div>
+            </div>
+            <div class="right-block__search-button">
+              <div class="search-button__img"
+                ><img src="./img/Search.png"
+              /></div>
+              <div class="search-button__text">Статус ремонта</div>
+            </div>
+          </div>
+        </div>
+        <div class="container__up-title">
+          <div class="up-title__vertical-line">
+            <img src="./img/highlight.png" />
+          </div>
+          <div class="up-title__text-title">Услуги и сервисы</div>
+        </div>
+      </div>
+    </header>
+    <main class="m-container">
+      <div class="m-conteiner__menu">
+        <div class="menu__shadow"></div>
+        <div class="menu__scroll">
+          <div class="scroll__elem">
+            <button class="scroll__button">Ремонтируемые бренды</button>
+          </div>
+          <div class="scroll__elem">
+            <button class="scroll__button">Ремонтируемые устройства</button>
+          </div>
+          <div class="scroll__elem">
+            <button class="scroll__button">Цены на услуги</button>
+          </div>
+          <div class="scroll__elem">
+            <button class="scroll__button">Адреса сервисных центров</button>
+          </div>
+          <div class="scroll__elem">
+            <button class="scroll__button">Специальные цены</button>
+          </div>
+          <div class="scroll__elem">
+            <button class="scroll__button">Отзывы</button>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <input type="checkbox" id="expand-toggle" />
+        <div class="title__content">
+          <div class="text__expand">
+            <p>
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+          </div>
+          <div class="content__readMore">
+            <div class="readMore__img"><img src="./img/Expand.png" /></div>
+            <label for="expand-toggle" id="expand-btn">Читать дальше</label>
+          </div>
+        </div>
+        <div class="title__img">
+          <img class="title__img-elem" src="./img/imgCPS.png" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
