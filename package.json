@@ -53,5 +53,9 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "node": "^14.18.3",
+    "sass": "^1.87.0"
   }
 }
