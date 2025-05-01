@@ -6,41 +6,30 @@
     rgba(255, 255, 255, 1) 100%
   );
   width: 100%;
-  height: 300px;
+  height: auto;
+
+  &__up-bord {
+    width: auto;
+    height: 52px;
+    padding-left: 25px;
+    padding-top: 15px;
+    align-content: center;
+    color: #7e7e82;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      182deg,
+      rgba(245, 245, 245, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 }
 .menu__hider {
   display: none;
-}
-.down-main__up-bord {
-  width: auto;
-  height: 52px;
-  padding-left: 25px;
-  padding-top: 15px;
-  align-content: center;
-  color: #7e7e82;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    127deg,
-    rgba(245, 245, 245, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
 }
 
 .expand {
   transform: scaleY(1);
 }
-/* .slide {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 8px;
-  margin-left: 25px;
-  width: 240px;
-  height: 72px;
-  background-color: #ffff;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-} */
 
 #bitmap-hide {
   display: none;
@@ -72,19 +61,22 @@
     justify-content: space-between;
     align-items: center;
   }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #b3b3b3;
+  }
 }
-.swiper-wrapper {
-  /* margin-left: 25px; */
-}
-.swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #b3b3b3;
-}
+
+// .swiper .swiper-pagination-bullet {
+//   width: 12px;
+//   height: 12px;
+//   background-color: #b3b3b3;
+// }
 .swiper-slide {
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  width: 190px;
+  width: 210px;
 }
 
 .swiper__shadow {
@@ -101,9 +93,10 @@
   padding-left: 25px;
   .no-mobile__variants {
     display: flex;
-    gap: 15px;
+    gap: 20px 30px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
   .no-mobile__menu-hider {
     display: flex;
@@ -124,7 +117,7 @@
   justify-content: space-between;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  width: 190px;
+  width: 210px;
   height: 58px;
   padding: 0 5px;
 }

@@ -1,0 +1,98 @@
+.sh-block {
+  position: absolute;
+  padding: 15px 15px;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+.sh-block__three-elem {
+  display: flex;
+  flex-direction: column;
+}
+.sh-block__head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.head__search {
+  margin-left: auto;
+}
+
+.round__btn {
+  cursor: pointer;
+}
+
+.up-menu__position {
+  margin-left: -20px;
+}
+.sh-block__up-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.up-menu__position {
+  display: flex;
+  gap: 15px;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+
+.sh-block__down-menu {
+  position: absolute;
+  bottom: 15px;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.down-menu__icons {
+  display: flex;
+  gap: 10px;
+}
+.down-menu__language-variants {
+  display: flex;
+  gap: 5px;
+}
+
+.up-menu__position {
+  cursor: pointer;
+}
+
+.position__vertical-line {
+  opacity: 0;
+}
+.up-menu__position:hover {
+  color: rgb(92, 92, 92);
+  .position__vertical-line {
+    opacity: 0.5;
+  }
+}
+.up-menu__position:focus {
+  color: rgb(109, 109, 109);
+  .position__vertical-line {
+    opacity: 0.7;
+  }
+}
+
+.position__name {
+  font-size: 16px;
+}
+
+.info__tph-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.vr__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.vr__btn:hover {
+  color: rgb(92, 92, 92);
+}
+.vr__btn:focus {
+  color: rgb(109, 109, 109);
+}
