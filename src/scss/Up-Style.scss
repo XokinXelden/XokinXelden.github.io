@@ -1,16 +1,17 @@
-body {
-  font-size: 14px;
-  font-family: 'TTLakes';
-  margin: 0px;
-  padding: 0px;
-  background-color: #f8f8f8;
-}
-
 .container {
   padding-left: 0px;
   padding-right: 0px;
   margin: 0px auto;
-  max-width: 1120px;
+  max-width: 1440px;
+
+  display: block;
+  grid-template-columns: 320px auto;
+  grid-template-areas:
+    'menu up-info'
+    'menu swiper-info'
+    'menu repair-info'
+    'menu price-info'
+    'menu FAQ';
 
   &__up-title {
     display: flex;
@@ -21,6 +22,7 @@ body {
 }
 
 .h-header {
+  grid-area: up-info;
   height: 86px;
   border-bottom: 1px solid #d9fff5;
   display: flex;
@@ -130,6 +132,7 @@ body {
   }
 }
 .title {
+  padding-bottom: 20px;
   &__content {
     margin-left: 10px;
     margin-right: 10px;
@@ -180,6 +183,10 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+.burger-button {
+  background-color: transparent;
+  border: none;
+}
 @media screen and (max-width: 320px) {
   #expand-toggle:checked ~ * .text__expand {
     height: 260px;
@@ -217,9 +224,24 @@ body {
   .menu {
     margin-bottom: 10px;
   }
+  #expand-toggle:checked ~ * .text__expand {
+    height: 220px;
+    transform: 0.5s ease;
+  }
+}
+@media screen and (min-width: 843px) {
+  .content__readMore {
+    display: none;
+  }
+  .text__expand {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1120px) {
+  .container {
+    display: grid;
+  }
   .h-header {
     background-color: transparent;
     justify-content: flex-end;
@@ -272,12 +294,5 @@ body {
     white-space: nowrap;
     flex-wrap: wrap;
     height: auto;
-  }
-
-  .text__expand {
-    height: auto;
-  }
-  .content__readMore {
-    display: none;
   }
 }

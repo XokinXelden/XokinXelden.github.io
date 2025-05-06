@@ -6,4 +6,14 @@
 @import '../fonts/FontStyle.css';
 @import './Up-Style.scss';
 @import './Sw-Style.scss';
+@import './Sw-Repair.scss';
+@import './Sw-Price.scss';
 @import '../scss/left-menu-style.scss';
+
+body {
+  font-size: 14px;
+  font-family: 'TTLakes';
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+}

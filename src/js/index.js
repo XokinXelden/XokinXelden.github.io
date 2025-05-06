@@ -1,4 +1,5 @@
 import '../scss/style.scss'
+import './Logic.js'
 
 import Swiper from 'swiper'
 import { FreeMode, Navigation, Pagination } from 'swiper/modules'
@@ -20,19 +21,5 @@ const swiper = new Swiper('.swiper', {
     clickable: true
   }
 })
-// import Swiper from 'swiper'
-// import '../../node_modules/swiper/swiper-bundle.js'
-// import '../../node_modules/swiper/swiper-bundle.css'
-
-// const swiper = new Swiper('.swiper', {
-//   spaceBetween: 20,
-//   slidesPerView: 1.5,
-//   freeMode: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'bullets',
-//     clickable: true
-//   }
-// })
 
 console.log('Works!')

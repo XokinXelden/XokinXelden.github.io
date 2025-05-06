@@ -1,0 +1,108 @@
+.down-repair {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    170deg,
+    rgb(245, 245, 245) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100%;
+  height: auto;
+  grid-area: repair-info;
+
+  &__up-bord {
+    width: auto;
+    height: 42px;
+    padding-left: 25px;
+    padding-top: 15px;
+    align-content: center;
+    color: #7e7e82;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      182deg,
+      rgba(245, 245, 245, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-top: 1px solid #d9fff5;
+    padding: 5px 15px;
+  }
+}
+
+.repair {
+  height: 205px;
+}
+.repair-card {
+  height: 140px;
+  width: 220px;
+  flex-direction: column;
+  align-items: start;
+}
+.repair-shadow {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.img-slide-repair {
+  align-self: end;
+  margin: 0 10px 5px 0;
+}
+.name-service__repair {
+  padding: 10px 0 0 15px;
+}
+.NMRepair__repair-card {
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  width: 220px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+}
+
+.NMRepair__variants {
+  overflow: hidden;
+  max-height: 150px;
+  transition: 0.5s ease;
+}
+
+.down-repair__no-mobile {
+  display: none;
+}
+
+#R-bitmap-hide {
+  display: none;
+}
+#R-bitmap-hide:checked ~ * .NMRepair__variants {
+  max-height: 400px;
+  transition: 0.5s ease;
+}
+#R-bitmap-hide:checked ~ * .R-content-lable::before {
+  content: 'Скрыть';
+}
+#R-bitmap-hide:checked ~ * .R-expand {
+  transform: scaleY(-1);
+}
+.R-content-lable::before {
+  content: 'Показать все';
+}
+
+.NMRepair__menu-hider {
+  display: none;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .down-repair__no-mobile {
+    display: block;
+  }
+  .NMRepair__variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 15px 10px 15px;
+  }
+  .NMRepair__menu-hider {
+    display: flex;
+  }
+}

@@ -1,0 +1,74 @@
+.down-price {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    170deg,
+    rgb(245, 245, 245) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100%;
+  height: auto;
+  grid-area: price-info;
+
+  &__up-board {
+    width: auto;
+    height: 42px;
+    padding-left: 25px;
+    padding-top: 15px;
+    align-content: center;
+    color: #7e7e82;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      182deg,
+      rgba(245, 245, 245, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-top: 1px solid #d9fff5;
+    padding: 5px 15px;
+  }
+}
+
+.service-price-card {
+  width: 240px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.price {
+  height: 245px;
+}
+
+.info__service {
+  padding: 4px;
+  grid-column: 1 / 3;
+}
+.info__price {
+  grid-column: 1 / 3;
+  padding: 4px;
+}
+.info__time {
+  padding: 4px;
+}
+.order-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 32px;
+  width: 120px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff3e79;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+.order-btn-grid {
+  padding: 4px;
+}
+.service-info__title {
+  color: #7e7e82;
+}
+.service-info__text {
+  color: #1b1c21;
+}

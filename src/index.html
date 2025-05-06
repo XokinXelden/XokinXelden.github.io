@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Вы хотели сказать SCP?</title>
   </head>
-  <body class="container">
-    <header class="h-container">
+  <body class="container grid-container">
+    <header class="h-container grid-elem">
       <div class="h-container__h-header">
         <div class="h-header">
           <div class="h-header__left-block">
             <div class="left-block__burger-button">
-              <img src="./img/Burger.png" />
+              <button class="burger-button ShowHideBlock1">
+                <img src="./img/Burger.png" />
+              </button>
             </div>
             <div class="left-block__logo"><img src="./img/Logo.png" /></div>
             <div class="left-block__divider"
@@ -55,65 +57,66 @@
           <div class="up-title__text-title">Услуги и сервисы</div>
         </div>
       </div>
+
+      <div class="m-container">
+        <div class="m-conteiner__menu">
+          <div class="menu__shadow"></div>
+          <div class="menu__scroll">
+            <div class="scroll__elem">
+              <button class="scroll__button">Ремонтируемые бренды</button>
+            </div>
+            <div class="scroll__elem">
+              <button class="scroll__button">Ремонтируемые устройства</button>
+            </div>
+            <div class="scroll__elem">
+              <button class="scroll__button">Цены на услуги</button>
+            </div>
+            <div class="scroll__elem">
+              <button class="scroll__button">Адреса сервисных центров</button>
+            </div>
+            <div class="scroll__elem">
+              <button class="scroll__button">Специальные цены</button>
+            </div>
+            <div class="scroll__elem">
+              <button class="scroll__button">Отзывы</button>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <input type="checkbox" id="expand-toggle" />
+          <div class="title__content">
+            <div class="text__expand">
+              <p>
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+            </div>
+            <div class="content__readMore">
+              <div class="readMore__img"><img src="./img/Expand.png" /></div>
+              <label
+                for="expand-toggle"
+                id="expand-btn"
+                class="expand-lable"
+              ></label>
+            </div>
+          </div>
+          <div class="title__img">
+            <img class="title__img-elem" src="./img/imgCPS.png" />
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="m-container">
-      <div class="m-conteiner__menu">
-        <div class="menu__shadow"></div>
-        <div class="menu__scroll">
-          <div class="scroll__elem">
-            <button class="scroll__button">Ремонтируемые бренды</button>
-          </div>
-          <div class="scroll__elem">
-            <button class="scroll__button">Ремонтируемые устройства</button>
-          </div>
-          <div class="scroll__elem">
-            <button class="scroll__button">Цены на услуги</button>
-          </div>
-          <div class="scroll__elem">
-            <button class="scroll__button">Адреса сервисных центров</button>
-          </div>
-          <div class="scroll__elem">
-            <button class="scroll__button">Специальные цены</button>
-          </div>
-          <div class="scroll__elem">
-            <button class="scroll__button">Отзывы</button>
-          </div>
-        </div>
-      </div>
-      <div class="title">
-        <input type="checkbox" id="expand-toggle" />
-        <div class="title__content">
-          <div class="text__expand">
-            <p>
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
-            <p>
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера, что подтверждает большое количество постоянных клиентов.
-              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.
-            </p>
-          </div>
-          <div class="content__readMore">
-            <div class="readMore__img"><img src="./img/Expand.png" /></div>
-            <label
-              for="expand-toggle"
-              id="expand-btn"
-              class="expand-lable"
-            ></label>
-          </div>
-        </div>
-        <div class="title__img">
-          <img class="title__img-elem" src="./img/imgCPS.png" />
-        </div>
-      </div>
-    </main>
-    <div class="down-main">
+    <section class="down-main">
       <div class="down-main__up-bord">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</div>
       <input type="checkbox" id="bitmap-hide" />
-      <section class="s-about">
+      <div class="s-about grid-elem">
         <div class="s-about__no-mobile">
           <div class="no-mobile__variants">
             <div class="variants__elem">
@@ -175,19 +178,13 @@
               <img src="img/Lenovo.png" alt="" /><img src="img/go.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/Samsuka.png" alt="" /><img
-                src="img/go.png"
-                alt=""
-              />
+              <img src="img/Samsuka.png" alt="" /><img src="img/go.png"alt=""/>
             </div>
             <div class="swiper-slide">
               <img src="img/apple.png" alt="" /><img src="img/go.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/viewsonic.png" alt="" /><img
-                src="img/go.png"
-                alt=""
-              />
+              <img src="img/viewsonic.png" alt="" /><img src="img/go.png"alt=""/>
             </div>
             <div class="swiper-slide">
               <img src="img/Bosch.png" alt="" /><img src="img/go.png" alt="" />
@@ -205,10 +202,7 @@
               <img src="img/Lenovo.png" alt="" /><img src="img/go.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/Samsuka.png" alt="" /><img
-                src="img/go.png"
-                alt=""
-              />
+              <img src="img/Samsuka.png" alt="" /><img src="img/go.png"alt=""/>
             </div>
             <div class="swiper-slide">
               <img src="img/apple.png" alt="" /><img src="img/go.png" alt="" />
@@ -216,100 +210,223 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </section>
-      <section>
-        <div class="sh-block" style="width: 320px; height: 100vh">
-          <div class="sh-block__three-elem">
-            <div class="sh-block__head">
-              <div class="head__close round__btn">
-                <img src="img/Burger-exit.png" alt="" />
-              </div>
-              <div class="head__logo"><img src="img/Logo.png" alt="" /></div>
-              <div class="head__search round__btn">
-                <img src="img/Search.png" alt="" />
-              </div>
+      </div>
+    </section>
+    <section class="down-repair">
+      <div class="down-repair__up-bord">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</div>
+      <input type="checkbox" id="R-bitmap-hide" />
+      <div class="down-repair__no-mobile">
+        <div class="NMRepair__variants repair-variants">
+          <div class="NMRepair__repair-card">
+            <div class="name-service name-service__repair">Ремонт ноутбуков</div> <div class="img-slide-repair"><img src="img/go.png" alt="" /></div>
+          </div>
+          <div class="NMRepair__repair-card">
+            <div class="name-service name-service__repair">Ремонт планшетов</div> <div class="img-slide-repair"> <img src="img/go.png" alt="" /></div>
+          </div>
+          <div class="NMRepair__repair-card">
+            <div class="name-service name-service__repair">Ремонт ПК</div> <div class="img-slide-repair"><img src="img/go.png" alt=""/></div>
+          </div>
+          <div class="NMRepair__repair-card">
+            <div class="name-service name-service__repair">Ремонт мониторов</div> <div class="img-slide-repair"><img src="img/go.png" alt="" /></div>
+          </div>
+        </div>
+        </div>
+        <div class="NMRepair__menu-hider">
+          <img class="R-expand" src="img/Expand.png" alt="" /> <label for="R-bitmap-hide" id="R-bitmap-btn"><div class="R-content-lable"></div></label>
+      </div>
+      <div class="swiper repair">
+        <div class="swiper__shadow repair-shadow"></div>
+        <div class="swiper-wrapper repair-wrapper">
+          <div class="swiper-slide repair-card">
+            <div class="name-service name-service__repair">Ремонт ноутбуков</div> <div class="img-slide-repair"><img src="img/go.png" alt="" /></div>
+          </div>
+          <div class="swiper-slide repair-card">
+            <div class="name-service name-service__repair">Ремонт планшетов</div> <div class="img-slide-repair"> <img src="img/go.png" alt="" /></div>
+          </div>
+          <div class="swiper-slide repair-card">
+            <div class="name-service name-service__repair">Ремонт ПК</div> <div class="img-slide-repair"><img src="img/go.png" alt=""/></div>
+          </div>
+          <div class="swiper-slide repair-card">
+            <div class="name-service name-service__repair">Ремонт мониторов</div> <div class="img-slide-repair"><img src="img/go.png" alt="" /></div>
+          </div>
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+    <section class="down-price">
+      <div class="down-price__up-board">ЦЕНЫ НА УСЛУГИ</div>
+      <div class="swiper price">
+        <div class="swiper__shadow price-shadow"></div>
+        <div class="swiper-wrapper price-wrapper">
+          <div class="swiper-slide service-price-card">
+            <div class="service-info info__service">
+              <div class="service-info__title">Ремонтные услуги</div>
+              <div class="service-info__text">Диагностика</div>
             </div>
-            <div class="sh-block__up-menu">
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Ремонт техники</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Услуги и сервисы</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Корпоративным клиентам</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Продавцам техники</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Партнёрам</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Производителям</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Наши сервисные центры</div>
-              </button>
-              <button class="up-menu__position">
-                <div class="position__vertical-line">
-                  <img src="img/VL.png" alt="" class="vertical-line" />
-                </div>
-                <div class="position__name">Контакты</div>
-              </button>
+            <div class="service-info info__price">
+              <div class="service-info__title">Цена</div>
+              <div class="service-info__text">Бесплатно</div>
             </div>
-            <div class="sh-block__down-menu">
-              <div class="down-menu__icons">
-                <div class="icons__call round__btn">
-                  <img src="img/call.png" alt="" />
-                </div>
-                <div class="icons__chat round__btn">
-                  <img src="img/chat.png" alt="" />
-                </div>
-                <div class="icons__profile round__btn">
-                  <img src="img/profile.png" alt="" />
-                </div>
+            <div class="service-info info__time">
+              <div class="service-info__title">Срок</div>
+              <div class="service-info__text">30 мин</div>
+            </div>
+            <div class="order-btn-grid"><button class="order-btn">заказать<img src="./img/dropdown.png" alt=""></button></div>
+          </div>
+          <div class="swiper-slide service-price-card">
+            <div class="service-info info__service">
+              <div class="service-info__title">Ремонтные услуги</div>
+              <div class="service-info__text">Диагностика</div>
+            </div>
+            <div class="service-info info__price">
+              <div class="service-info__title">Цена</div>
+              <div class="service-info__text">Бесплатно</div>
+            </div>
+            <div class="service-info info__time">
+              <div class="service-info__title">Срок</div>
+              <div class="service-info__text">30 мин</div>
+            </div>
+            <div class="order-btn-grid"><button class="order-btn">заказать<img src="./img/dropdown.png" alt=""></button></div>
+          </div>
+          <div class="swiper-slide service-price-card">
+            <div class="service-info info__service">
+              <div class="service-info__title">Ремонтные услуги</div>
+              <div class="service-info__text">Диагностика</div>
+            </div>
+            <div class="service-info info__price">
+              <div class="service-info__title">Цена</div>
+              <div class="service-info__text">Бесплатно</div>
+            </div>
+            <div class="service-info info__time">
+              <div class="service-info__title">Срок</div>
+              <div class="service-info__text">30 мин</div>
+            </div>
+            <div class="order-btn-grid"><button class="order-btn">заказать<img src="./img/dropdown.png" alt=""></button></div>
+          </div>
+          <div class="swiper-slide service-price-card">
+            <div class="service-info info__service">
+              <div class="service-info__title">Ремонтные услуги</div>
+              <div class="service-info__text">Диагностика</div>
+            </div>
+            <div class="service-info info__price">
+              <div class="service-info__title">Цена</div>
+              <div class="service-info__text">Бесплатно</div>
+            </div>
+            <div class="service-info info__time">
+              <div class="service-info__title">Срок</div>
+              <div class="service-info__text">30 мин</div>
+            </div>
+            <div class="order-btn-grid"><button class="order-btn">заказать<img src="./img/dropdown.png" alt=""></button></div>
+          </div>
+          <div class="swiper-slide service-price-card">
+            <div class="service-info info__service">
+              <div class="service-info__title">Ремонтные услуги</div>
+              <div class="service-info__text">Диагностика</div>
+            </div>
+            <div class="service-info info__price">
+              <div class="service-info__title">Цена</div>
+              <div class="service-info__text">Бесплатно</div>
+            </div>
+            <div class="service-info info__time">
+              <div class="service-info__title">Срок</div>
+              <div class="service-info__text">30 мин</div>
+            </div>
+            <div class="order-btn-grid"><button class="order-btn">заказать<img src="./img/dropdown.png" alt=""></button></div>
+          </div>
+        </div>
+          <div class="swiper-pagination"></div>
+    </section>
+    <section class="sh-block ShowHide" style="left: ''">
+      <div class="sh-block__three-elem">
+        <div>
+          <div class="sh-block__head">
+            <button class="head__close ShowHideBlock2">
+              <img src="img/Burger-exit.png" alt="" />
+            </button>
+            <div class="head__logo"><img src="img/Logo.png" alt="" /></div>
+            <div class="head__search">
+              <img src="img/Search.png" alt="" />
+            </div>
+          </div>
+          <div class="sh-block__up-menu">
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
               </div>
-              <div class="down-menu__info">
-                <div class="info__email">mail@cps.com</div>
-                <div class="info__tph-number">8 800 890 8900</div>
+              <div class="position__name">Ремонт техники</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
               </div>
-              <div class="down-menu__language-variants">
-                <div class="language-variants__RU">
-                  <button class="vr__btn">RU</button>
-                </div>
-                <div class="language-variants__EN">
-                  <button class="vr__btn">EN</button>
-                </div>
-                <div class="language-variants__CH">
-                  <button class="vr__btn">CH</button>
-                </div>
+              <div class="position__name">Услуги и сервисы</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
               </div>
+              <div class="position__name">Корпоративным клиентам</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
+              </div>
+              <div class="position__name">Продавцам техники</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
+              </div>
+              <div class="position__name">Партнёрам</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
+              </div>
+              <div class="position__name">Производителям</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
+              </div>
+              <div class="position__name">Наши сервисные центры</div>
+            </button>
+            <button class="up-menu__position">
+              <div class="position__vertical-line">
+                <img src="img/VL.png" alt="" class="vertical-line" />
+              </div>
+              <div class="position__name">Контакты</div>
+            </button>
+          </div>
+        </div>
+        <div class="sh-block__down-menu">
+          <div class="down-menu__icons">
+            <div class="icons__call round__btn">
+              <img src="img/call.png" alt="" />
+            </div>
+            <div class="icons__chat round__btn">
+              <img src="img/chat.png" alt="" />
+            </div>
+            <div class="icons__profile round__btn">
+              <img src="img/profile.png" alt="" />
+            </div>
+          </div>
+          <div class="down-menu__info">
+            <div class="info__email">mail@cps.com</div>
+            <div class="info__tph-number">8 800 890 8900</div>
+          </div>
+          <div class="down-menu__language-variants">
+            <div class="language-variants__RU">
+              <button class="vr__btn">RU</button>
+            </div>
+            <div class="language-variants__EN">
+              <button class="vr__btn">EN</button>
+            </div>
+            <div class="language-variants__CH">
+              <button class="vr__btn">CH</button>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
