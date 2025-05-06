@@ -91,6 +91,9 @@
   display: none;
   align-items: center;
 }
+.Go-go {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   .down-repair__no-mobile {
@@ -99,10 +102,11 @@
   .NMRepair__variants {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px 15px 10px 15px;
+    gap: 30px;
+    padding: 20px 20px;
   }
   .NMRepair__menu-hider {
     display: flex;
+    margin-left: 24px;
   }
 }
