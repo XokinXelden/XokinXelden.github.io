@@ -9,6 +9,26 @@
 @import './Sw-Repair.scss';
 @import './Sw-Price.scss';
 @import '../scss/left-menu-style.scss';
+@import '../scss/right-menu-feedback.scss';
+@import '../scss/right-menu-call.scss';
+@import '../scss/FAQ-style.scss';
+
+@keyframes RBShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes RBHide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 body {
   font-size: 14px;

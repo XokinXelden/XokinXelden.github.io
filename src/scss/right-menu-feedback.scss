@@ -1,0 +1,133 @@
+.R-HideBlock-feedback {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 90%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 1.5 ease;
+
+  &__right-block {
+    height: 100%;
+    width: 319px;
+    background-color: white;
+    border-left: 1px solid #d9fff5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1100;
+    opacity: 100%;
+  }
+  &__text-feedback {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__text-feedback > p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__close-btn {
+    margin: 20px 0 0 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 25px;
+    form > input {
+      height: 43px;
+      width: 80%;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding-left: 20px;
+      font-size: 16px;
+      font-family: 'TTLakes';
+    }
+
+    form > input:focus {
+      outline: none;
+      border: 1px solid #eaeaea;
+    }
+    form > input::placeholder {
+      color: rgba(104, 104, 104, 0.478);
+    }
+    form > .R-HideBlock-feedback__message-form-input {
+      padding: 10px 0 0 20px;
+      height: 88px;
+      width: 80%;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding-left: 20px;
+      font-size: 16px;
+      resize: none;
+      letter-spacing: normal;
+      font-family: 'TTLakes';
+
+      &:focus {
+        outline: none;
+        border: 1px solid #eaeaea;
+      }
+
+      &::placeholder {
+        font-size: 16px;
+        color: rgba(104, 104, 104, 0.478);
+      }
+    }
+  }
+  &__agreement {
+    padding: 5px 25px 0 28px;
+    a {
+      color: #ff3e79;
+      text-decoration: none;
+    }
+  }
+  &__send {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 23px 0 0;
+    padding: 4px;
+  }
+  &__send-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 32px;
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff3e79;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .R-HideBlock-feedback {
+    &__right-block {
+      width: 439px;
+    }
+    &__close-btn {
+      position: absolute;
+      left: -75px;
+      top: 0px;
+    }
+    form > .R-HideBlock-feedback__message-form-input {
+      height: 118px;
+    }
+    &__form-group {
+      form > input {
+        height: 48px;
+        width: 85%;
+      }
+    }
+  }
+}

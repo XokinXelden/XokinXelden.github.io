@@ -1,0 +1,53 @@
+.FAQ {
+  grid-area: FAQ;
+  padding: 25px;
+
+  &__NDS {
+    color: #7e7e82;
+    margin-bottom: 10px;
+  }
+  &__offer {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1b1c21;
+  }
+  &__offer-arrow {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff3e79;
+    margin-left: 5px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__bottom > div {
+    color: #7e7e82;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .FAQ {
+    &__NDS {
+      max-width: 430px;
+    }
+    &__bottom > div {
+      max-width: 220px;
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__CPS > p {
+      text-align: start;
+    }
+    &__information > p {
+      text-align: end;
+    }
+  }
+}

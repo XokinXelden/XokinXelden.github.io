@@ -1,7 +1,7 @@
 .down-repair {
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    170deg,
+    200deg,
     rgb(245, 245, 245) 0%,
     rgba(255, 255, 255, 1) 100%
   );
@@ -62,7 +62,7 @@
 
 .NMRepair__variants {
   overflow: hidden;
-  max-height: 150px;
+  max-height: 140px;
   transition: 0.5s ease;
 }
 
@@ -90,6 +90,8 @@
 .NMRepair__menu-hider {
   display: none;
   align-items: center;
+  margin-left: 24px;
+  margin-bottom: 10px;
 }
 .Go-go {
   cursor: pointer;
@@ -102,11 +104,15 @@
   .NMRepair__variants {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px 30px;
     padding: 20px 20px;
   }
   .NMRepair__menu-hider {
     display: flex;
-    margin-left: 24px;
+  }
+}
+@media screen and (min-width: 1018px) {
+  .NMRepair__menu-hider {
+    display: none;
   }
 }
