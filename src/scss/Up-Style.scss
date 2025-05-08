@@ -270,6 +270,7 @@
     &__text {
       display: block;
     }
+
     &__search-button {
       display: flex;
       align-items: center;
@@ -278,7 +279,9 @@
       margin-right: 40px;
     }
   }
-
+  .repair-button__text {
+    display: block;
+  }
   .search-button__text {
     display: block;
   }
