@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .FAQ {
     &__NDS {
       max-width: 430px;
@@ -48,6 +48,8 @@
     }
     &__information > p {
       text-align: end;
+      margin-top: 0;
+      margin-bottom: 15px;
     }
   }
 }

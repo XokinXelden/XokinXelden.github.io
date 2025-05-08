@@ -9,7 +9,7 @@
   height: auto;
   grid-area: swiper-info;
 
-  &__up-bord {
+  &__up-board {
     width: auto;
     height: 42px;
     padding-left: 25px;
@@ -123,7 +123,7 @@
   padding: 0 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .s-about__no-mobile {
     display: block;
   }

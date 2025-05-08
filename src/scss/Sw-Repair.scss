@@ -9,7 +9,7 @@
   height: auto;
   grid-area: repair-info;
 
-  &__up-bord {
+  &__up-board {
     width: auto;
     height: 42px;
     padding-left: 25px;
@@ -29,19 +29,19 @@
 
 .repair {
   height: 205px;
-}
-.repair-card {
-  height: 140px;
-  width: 220px;
-  flex-direction: column;
-  align-items: start;
-}
-.repair-shadow {
-  position: absolute;
-  width: 100%;
-  height: 180px;
-  pointer-events: none;
-  z-index: 100;
+  &-card {
+    height: 140px;
+    width: 220px;
+    flex-direction: column;
+    align-items: start;
+  }
+  &-shadow {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    pointer-events: none;
+    z-index: 100;
+  }
 }
 
 .img-slide-repair {
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .down-repair__no-mobile {
     display: block;
   }
