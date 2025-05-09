@@ -1,26 +1,35 @@
 let ShowHideBlock1 = document.querySelector('.ShowHideBlock1')
 let ShowHideBlock2 = document.querySelector('.ShowHideBlock2')
 let ShowHide = document.querySelector('.ShowHide')
+let ShowHideBack = document.querySelector('.blur-background')
 
 ShowHideBlock1.addEventListener('click', () => {
   console.log('click')
   if (ShowHide.style.left === '') {
     console.log('1')
     ShowHide.style.left = '0px'
+    ShowHideBack.style.animation = 'RBShow 0.3s forwards'
+    ShowHideBack.style.pointerEvents = 'auto'
     console.log(ShowHide.style.left)
   } else if (ShowHide.style.left === '0px') {
     console.log('2')
     ShowHide.style.left = ''
+    ShowHideBack.style.animation = 'RBHide 0.3s forwards'
+    ShowHideBack.style.pointerEvents = 'none'
   }
 })
 ShowHideBlock2.addEventListener('click', () => {
   if (ShowHide.style.left === '') {
     console.log('1')
     ShowHide.style.left = '0px'
+    ShowHideBack.style.animation = 'RBShow 0.3s forwards'
+    ShowHideBack.style.pointerEvents = 'auto'
     console.log(ShowHide.style.left)
   } else if (ShowHide.style.left === '0px') {
     console.log('2')
     ShowHide.style.left = ''
+    ShowHideBack.style.animation = 'RBHide 0.3s forwards'
+    ShowHideBack.style.pointerEvents = 'none'
     console.log(ShowHide.style.left)
   }
 })

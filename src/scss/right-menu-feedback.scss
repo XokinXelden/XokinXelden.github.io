@@ -59,7 +59,7 @@
     form > .R-HideBlock-feedback__message-form-input {
       padding: 10px 0 0 20px;
       height: 88px;
-      width: 85.5%;
+      width: 238px;
       border: 1px solid #eaeaea;
       border-radius: 10px;
       padding-left: 20px;
@@ -120,13 +120,14 @@
       left: -75px;
       top: 0px;
     }
-    form > .R-HideBlock-feedback__message-form-input {
-      height: 118px;
-    }
     &__form-group {
       form > input {
         height: 48px;
         width: 85%;
+      }
+      form > .R-HideBlock-feedback__message-form-input {
+        height: 118px;
+        width: 355px;
       }
     }
   }
