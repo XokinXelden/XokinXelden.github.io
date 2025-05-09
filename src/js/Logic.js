@@ -39,6 +39,7 @@ let ShowHideBlockFeed1 = document.querySelector(
 )
 let ShowHideBlockFeed2 = document.querySelector('.icons__chat')
 let ShowHideFeed = document.querySelector('.R-HideBlock-feedback')
+let ScrollOff = document.querySelector('.ScrollOff')
 
 ShowHideBlockFeed1.addEventListener('click', () => {
   console.log('click')
@@ -47,12 +48,14 @@ ShowHideBlockFeed1.addEventListener('click', () => {
     ShowHideFeed.style.opacity = '1'
     ShowHideFeed.style.animation = 'RBShow 0.3s forwards'
     ShowHideFeed.style.pointerEvents = 'auto'
+    ScrollOff.style.overflow = 'hidden'
     console.log(ShowHideFeed.style.opacity)
   } else if (ShowHideFeed.style.opacity === '1') {
     console.log('Делаю прозрачным')
     ShowHideFeed.style.opacity = '0'
     ShowHideFeed.style.animation = 'RBHide 0.3s forwards'
     ShowHideFeed.style.pointerEvents = 'none'
+    ScrollOff.style.overflow = 'auto'
   }
 })
 ShowHideBlockFeed2.addEventListener('click', () => {
@@ -62,12 +65,14 @@ ShowHideBlockFeed2.addEventListener('click', () => {
     ShowHideFeed.style.opacity = '1'
     ShowHideFeed.style.animation = 'RBShow 0.3s forwards'
     ShowHideFeed.style.pointerEvents = 'auto'
+    ScrollOff.style.overflow = 'hidden'
     console.log(ShowHideFeed.style.opacity)
   } else if (ShowHideFeed.style.opacity === '1') {
     console.log('Делаю прозрачным')
     ShowHideFeed.style.opacity = '0'
     ShowHideFeed.style.animation = 'RBHide 0.3s forwards'
     ShowHideFeed.style.pointerEvents = 'none'
+    ScrollOff.style.overflow = 'auto'
     console.log(ShowHideFeed.style.opacity)
   }
 })
@@ -83,12 +88,14 @@ ShowHideBlockCall1.addEventListener('click', () => {
     ShowHideCall.style.opacity = '1'
     ShowHideCall.style.animation = 'RBShow 0.5s forwards'
     ShowHideCall.style.pointerEvents = 'auto'
+    ScrollOff.style.overflow = 'hidden'
     console.log(ShowHideFeed.style.opacity)
   } else if (ShowHideCall.style.opacity === '1') {
     console.log('Делаю прозрачным')
     ShowHideCall.style.opacity = '0'
     ShowHideCall.style.animation = 'RBHide 0.5s forwards'
     ShowHideCall.style.pointerEvents = 'none'
+    ScrollOff.style.overflow = 'auto'
   }
 })
 ShowHideBlockCall2.addEventListener('click', () => {
@@ -98,12 +105,14 @@ ShowHideBlockCall2.addEventListener('click', () => {
     ShowHideCall.style.opacity = '1'
     ShowHideCall.style.animation = 'RBShow 0.5s forwards'
     ShowHideCall.style.pointerEvents = 'auto'
+    ScrollOff.style.overflow = 'hidden'
     console.log(ShowHideCall.style.opacity)
   } else if (ShowHideCall.style.opacity === '1') {
     console.log('Делаю прозрачным')
     ShowHideCall.style.opacity = '0'
     ShowHideCall.style.animation = 'RBHide 0.5s forwards'
     ShowHideCall.style.pointerEvents = 'none'
+    ScrollOff.style.overflow = 'auto'
     console.log(ShowHideCall.style.opacity)
   }
 })

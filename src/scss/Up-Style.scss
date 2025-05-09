@@ -204,6 +204,17 @@
     transform: 0.5s ease;
   }
 }
+
+@media screen and (max-width: 769px) {
+  .h-header__center-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 530px) {
+  .h-header__center-block {
+    display: flex;
+  }
+}
 @media screen and (min-width: 769px) {
   .title {
     display: flex;
