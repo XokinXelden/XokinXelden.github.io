@@ -50,9 +50,6 @@
   padding: 4px;
 }
 .order-btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   height: 32px;
   width: 120px;
   border: none;
@@ -90,14 +87,14 @@
     margin: 0 25px;
   }
   &__up-title-info {
-    margin: 0 20px;
+    margin: 0 5px;
     max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 58px;
     justify-items: center;
     align-items: end;
-    padding: 0 25px;
+    padding: 0 35px 0 25px;
     & > div {
       color: #7e7e82;
     }
@@ -115,6 +112,9 @@
 .service-info__name {
   justify-self: start;
   grid-column: 1 / 5;
+}
+.service-info__price-title {
+  grid-column: 5 / 6;
 }
 
 @media screen and (min-width: 769px) {
